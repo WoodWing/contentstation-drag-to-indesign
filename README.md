@@ -3,8 +3,23 @@ This integration adds a custom button to the Dossier panel which can be dragged 
 
 ![Drag & drop in action](https://github.com/WoodWing/contentstation-drag-to-indesign/blob/master/drag-to-indesign.gif "Drag & drop in action")
 
-# Configuration
-Add dragToInDesign.js to the 'contentStation' section of the Content Station [config.js](https://helpcenter.woodwing.com/hc/en-us/articles/115005560243-Configuring-Content-Station-Aurora) 
+# Installation
+1. Place the `dragToInDesign.js` into Content Station's sdk subdirectory. I.E. `../contentstation/sdk/dragToInDesign.js`
+2. Add the URL to the `dragToInDesign.js` into the to the 'contentStation' section of the Content Station [config.js](https://helpcenter.woodwing.com/hc/en-us/articles/115005560243-Configuring-Content-Station-Aurora)
+```javascript
+    ...
+    ...
+    plugins: {
+        contentStation: [
+            // 'sdk/samples/sample-1.js',
+            // 'sdk/samples/sample-2.js'
+            'sdk/dragToInDesign.js'
+        ],
+        digitalEditor: [
+            // 'sdk/samples/digital-editor-sdk-sample.js',
+    ...
+    ...
+```
 
 # Note
 * The plugin assumes that the server url returned by the Content Station SDK matches the server url configured for InDesign. Please update the createDragData funciton if this is not the case. 
