@@ -13,7 +13,7 @@ This integration adds a custom button to the Dossier panel which can be dragged 
         contentStation: [
             // 'sdk/samples/sample-1.js',
             // 'sdk/samples/sample-2.js'
-            'sdk/dragToInDesign.js'
+            '../contentstation-integrations/dragToInDesign.js'
         ],
         digitalEditor: [
             // 'sdk/samples/digital-editor-sdk-sample.js',
@@ -21,6 +21,6 @@ This integration adds a custom button to the Dossier panel which can be dragged 
     ...
 ```
 
-# Note
-* The plugin assumes that the server url returned by the Content Station SDK matches the server url configured for InDesign. Please update the createDragData funciton if this is not the case. 
+# Notes
+* The plugin assumes that the server url returned by the Content Station SDK matches the server url configured for InDesign. Please update the createDragData function if this is not the case. 
 * The text of the button and tooltip can be localised by changing the D2ID_LABEL and D2ID_HINT_TEXT constants
