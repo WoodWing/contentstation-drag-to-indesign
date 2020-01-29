@@ -13,7 +13,7 @@ This integration adds a custom button to the Dossier panel which can be dragged 
         contentStation: [
             // 'sdk/samples/sample-1.js',
             // 'sdk/samples/sample-2.js'
-            '../contentstation-integrations/dragToInDesign.js'
+            '../Enterprise/contentstation-integrations/dragToInDesign.js'
         ],
         digitalEditor: [
             // 'sdk/samples/digital-editor-sdk-sample.js',
